@@ -1,0 +1,17 @@
+{
+    "version": 2,
+    "framework": "node",
+    "name": "website",
+    "builds": [
+        {
+            "src": "app.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/app.js"
+        }
+    ]
+}
